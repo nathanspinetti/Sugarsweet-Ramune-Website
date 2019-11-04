@@ -1,0 +1,23 @@
+@media screen and (min-width: 40em){
+main{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 2em;
+}
+// figure{
+//   grid-column: 1 / span 4;
+// }
+// h1{
+//   grid-column: 5 / span 6;
+//   align-self: end;
+// }
+// p{
+//   grid-column: 5 / span 6;
+//   grid-row: 2 / span 2;
+// }
+// footer{
+//   grid-column: 1 / span 4;
+//   grid-row: 2;
+// }
+}
