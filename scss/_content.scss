@@ -1,13 +1,18 @@
 section{
-  .backgroundheader{
-  background-color: #6B6B6B;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 2em;
 }
+
+.one{
+  background-color: #6B6B6B;
 }
 
 @media screen and (min-width: 40em){
 main{
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat (12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-gap: 2em;
 }
