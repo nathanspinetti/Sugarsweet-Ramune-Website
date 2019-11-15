@@ -1,6 +1,18 @@
-@font-face { font-family: The Bold Font; src: url('https://www.dafont.com/the-bold-font.font'); }
-@font-face { font-family: The Light Font; src: url('https://www.dafont.com/the-light-font.font'); }
-//@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); }
+@font-face { font-family: 'Bold'; src: url('../fonts/theboldfont.ttf'); }
+@font-face { font-family: 'Light'; src: url('../fonts/TheLightFont.ttf'); }
+@font-face { font-family: 'Geo'; src: url('../fonts/GeosansLight.ttf'); }
+
 h1{
-	font-family:The Bold Font;
+	font-family:'Bold';
+}
+h2{
+	font-family:'Light';
+}
+
+p{
+	font-family:'Geo';
+}
+li{
+	font-family:'Geo';
+	list-style:none;
 }
