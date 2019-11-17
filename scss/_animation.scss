@@ -1,0 +1,111 @@
+.leftslide{
+  position:relative;
+      // z-index: 20;
+  animation-name: leftslide;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes leftslide {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(0%); }
+}
+
+.rightslide{
+  position:relative;
+      // z-index: 20;
+  animation-name: rightslide;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes rightslide {
+  0% { transform: translateX(150%); }
+  100% { transform: translateX(0%); }
+}
+
+.pop-in{
+  position:relative;
+      // z-index: 20;
+  animation-name: pop-in;
+  animation-duration: .5s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes pop-in {
+0% { opacity: 0; transform: scale(0.5); }
+100% { opacity: 1; transform: scale(1); }
+}
+
+.mo{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 5.5s;
+  animation-fill-mode: both;
+}
+.mo1{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 5.9s;
+  animation-fill-mode: both;
+}
+.mo2{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 6.3s;
+  animation-fill-mode: both;
+}
+.mo3{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 6.7s;
+  animation-fill-mode: both;
+}
+.mo4{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 7.1s;
+  animation-fill-mode: both;
+}
+
+.moclassic{
+  position:relative;
+      // z-index: 20;
+  animation-name: mo;
+  animation-duration: .5s;
+  animation-delay: 7.9s;
+  animation-fill-mode: both;
+}
+
+@keyframes mo {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.japanimation{
+  position:relative;
+      // z-index: 20;
+  animation-name: japanimation;
+  animation-duration: .5s;
+  animation-delay: 7.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes japanimation {
+0% { opacity: 0; transform: scale(0.5); }
+100% { opacity: 1; transform: scale(1); }
+}
