@@ -119,6 +119,64 @@ li {
   100% {
     opacity: 1;
     transform: scale(1); } }
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1, 1.08); }
+  100% {
+    transform: scale(1, 1); } }
+.wave-container > svg {
+  display: block;
+  transform-origin: bottom;
+  animation: animateWave 5000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+.thenav {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.thenav:before, .thenav:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff; }
+
+.thenav:before {
+  left: -2.5px; }
+
+.thenav:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.thenav:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.thenav:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s; }
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.grow {
+  transition: 1.5s ease-in-out; }
+
 body {
   overflow-x: hidden; }
 
@@ -130,28 +188,33 @@ nav {
   z-index: 10; }
 
 .contact, .contact a {
-  grid-column: 11;
+  grid-column: 10 / -1;
   grid-row: 1 / span 6;
-  justify-self: center;
   align-self: center;
   text-decoration: none;
-  color: #212121; }
+  color: #57FF7E;
+  z-index: 20;
+  font-size: 1.3rem; }
 
 .who, .who a {
-  grid-column: 8 / span 2;
+  grid-column: 7 / span 2;
   grid-row: 1 / span 6;
   justify-self: center;
   align-self: center;
   text-decoration: none;
-  color: #212121; }
+  color: #BC57FF;
+  z-index: 20;
+  font-size: 1.3rem; }
 
 .buy, .buy a {
-  grid-column: 6;
+  grid-column: 5;
   grid-row: 1 / span 6;
   justify-self: center;
   align-self: center;
   text-decoration: none;
-  color: #212121; }
+  color: #FF5768;
+  z-index: 20;
+  font-size: 1.3rem; }
 
 .logo {
   align-self: end;
@@ -209,7 +272,8 @@ nav {
   grid-gap: 2em;
   margin: 0 auto;
   max-width: 75em;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .four {
   display: grid;
@@ -218,13 +282,62 @@ nav {
   grid-gap: 2em;
   margin: 0 auto;
   position: relative;
-  background-color: #e8e0ee;
   overflow: hidden;
+  z-index: 0; }
+
+.four-one {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  grid-gap: 2em;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 0; }
+
+.bg4 {
+  background-color: #f5d6dd;
+  height: 130vh;
+  z-index: -1; }
+
+.four-two {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  grid-gap: 2em;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 0; }
+
+.bg5 {
+  background-color: #e7f3e0;
+  height: 130vh;
+  z-index: -1; }
+
+.four-three {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+  grid-gap: 2em;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 0; }
+
+.bg6 {
+  background-color: #fefcdd;
+  height: 130vh;
+  z-index: -1; }
+
+.bg3 {
+  background-color: #ece4f0;
+  height: 130vh;
   z-index: -1; }
 
 .background1 {
   background-color: #fefcdc;
-  height: 100vh; }
+  height: 130vh; }
 
 .background2 {
   background-color: #ffffff;
@@ -506,30 +619,34 @@ svg {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
   vertical-align: middle;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: -200px;
+  z-index: 0 !important; }
 
 .grapehand {
   grid-column: 1;
-  grid-row: 7;
+  grid-row: 5;
   z-index: 2 !important; }
 
 .cherryhand {
-  grid-column: 3;
-  grid-row: 2; }
+  grid-column: 1;
+  grid-row: 5;
+  z-index: 2 !important; }
 
 .melonhand {
-  grid-column: 5;
-  grid-row: 2; }
+  grid-column: 1;
+  grid-row: 5;
+  z-index: 2 !important; }
 
 .lemonhand {
-  grid-column: 7;
-  grid-row: 2; }
+  grid-column: 1;
+  grid-row: 5;
+  z-index: 2 !important; }
 
 .grapetitle {
   color: #BC57FF;
-  grid-row: 7;
+  grid-row: 5;
   grid-column: 5/ span 19;
   font-size: 11rem;
   justify-self: center;
@@ -538,7 +655,7 @@ svg {
 
 .grapetitle1 {
   color: #212121;
-  grid-row: 7;
+  grid-row: 5;
   grid-column: 5/ span 19;
   font-size: 11.1rem;
   justify-self: center;
@@ -546,8 +663,8 @@ svg {
   z-index: 0; }
 
 .motto {
-  color: #BC57FF;
-  grid-row: 13;
+  color: #212121;
+  grid-row: 11;
   grid-column: 12/ span 8;
   font-size: 2.5rem;
   justify-self: center;
@@ -556,7 +673,7 @@ svg {
 
 .cal {
   color: #212121;
-  grid-row: 18;
+  grid-row: 16;
   grid-column: 2/ span 9;
   font-size: 3rem;
   justify-self: center;
@@ -565,7 +682,7 @@ svg {
 
 .caldesc {
   color: #212121;
-  grid-row: 20 / span 2;
+  grid-row: 18 / span 2;
   grid-column: 4/ span 5;
   font-size: 2rem;
   justify-self: center;
@@ -576,7 +693,7 @@ svg {
 
 .sug {
   color: #212121;
-  grid-row: 18;
+  grid-row: 16;
   grid-column: 8/ span 9;
   font-size: 3rem;
   justify-self: center;
@@ -586,7 +703,7 @@ svg {
 .sugdesc {
   color: #212121;
   justify-self: center;
-  grid-row: 20 / span 2;
+  grid-row: 18 / span 2;
   grid-column: 10/ span 5;
   font-size: 2rem;
   justify-self: center;
@@ -597,7 +714,7 @@ svg {
 
 .gro {
   color: #212121;
-  grid-row: 18;
+  grid-row: 16;
   grid-column: 14/ span 9;
   font-size: 3rem;
   justify-self: center;
@@ -606,7 +723,7 @@ svg {
 
 .grodesc {
   color: #212121;
-  grid-row: 20 / span 2;
+  grid-row: 18 / span 2;
   grid-column: 17/ span 4;
   font-size: 2rem;
   justify-self: center;
@@ -614,6 +731,277 @@ svg {
   z-index: 1;
   align-self: center;
   text-align: center; }
+
+.cherrytitle {
+  color: #FF5768;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.cherrytitle1 {
+  color: #212121;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11.1rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 0; }
+
+.motto1 {
+  color: #212121;
+  grid-row: 11;
+  grid-column: 12/ span 8;
+  font-size: 2.5rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1; }
+
+.cal1 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 2/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.caldesc1 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 4/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.sug1 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 8/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.sugdesc1 {
+  color: #212121;
+  justify-self: center;
+  grid-row: 18 / span 2;
+  grid-column: 10/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.gro1 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 14/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.grodesc1 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 17/ span 4;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.melontitle {
+  color: #57FF7E;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.melontitle1 {
+  color: #212121;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11.1rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 0; }
+
+.motto2 {
+  color: #212121;
+  grid-row: 11;
+  grid-column: 12/ span 8;
+  font-size: 2.5rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1; }
+
+.cal2 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 2/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.caldesc2 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 4/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.sug2 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 8/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.sugdesc2 {
+  color: #212121;
+  justify-self: center;
+  grid-row: 18 / span 2;
+  grid-column: 10/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.gro2 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 14/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.grodesc2 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 17/ span 4;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.lemontitle {
+  color: #FFF957;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.lemontitle1 {
+  color: #212121;
+  grid-row: 5;
+  grid-column: 5/ span 19;
+  font-size: 11.1rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 0; }
+
+.motto3 {
+  color: #212121;
+  grid-row: 11;
+  grid-column: 12/ span 8;
+  font-size: 2.5rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1; }
+
+.cal3 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 2/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.caldesc3 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 4/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.sug3 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 8/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.sugdesc3 {
+  color: #212121;
+  justify-self: center;
+  grid-row: 18 / span 2;
+  grid-column: 10/ span 5;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.gro3 {
+  color: #212121;
+  grid-row: 16;
+  grid-column: 14/ span 9;
+  font-size: 3rem;
+  justify-self: center;
+  font-family: 'Bold';
+  z-index: 1; }
+
+.grodesc3 {
+  color: #212121;
+  grid-row: 18 / span 2;
+  grid-column: 17/ span 4;
+  font-size: 2rem;
+  justify-self: center;
+  font-family: 'Light';
+  z-index: 1;
+  align-self: center;
+  text-align: center; }
+
+.wave-container {
+  background: #EEE;
+  position: relative; }
+
+.wave-container > svg {
+  display: block; }
 
 @media screen and (min-width: 40em) {
   main {
