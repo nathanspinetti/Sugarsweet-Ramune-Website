@@ -1,0 +1,435 @@
+.tilt{
+	grid-column:1 / -1;
+	grid-row:9;
+	margin-left:-550px;
+	margin-top: -150px;
+	z-index:3;
+}
+
+.tiltheader{
+	grid-column:1 / -1;
+	grid-row:1 / 5;
+	justify-self:center;
+	align-self:center;
+	z-index:4;
+	margin-top:20px;
+}
+
+.meee{
+	grid-column:4 / span 4;
+	grid-row:8 / span 4;
+	z-index:1;
+}
+.medesc{
+	grid-column:4 / span 7;
+	grid-row:53 / span 4;
+	font-size:2rem;
+	text-align:center;
+	z-index:0;
+}
+.nishiii{
+	grid-column:14 / span 4;
+	grid-row:11 / span 4;
+	z-index:1;
+}
+.nishidesc{
+	grid-column:14 / span 7;
+	grid-row:21 / span 4;
+	font-size:2rem;
+	text-align:center;
+	z-index:0;
+}
+
+.botfell{
+	grid-row:16 / span 10;
+	grid-column:1 / span 10;
+	margin-top:-450px;
+	margin-left:-100px;
+	z-index:20 !important;
+	position:relative;
+}
+
+.angledbottle{
+	grid-column:12;
+	grid-row:1;
+	z-index:2 !important;
+}
+
+.peell{
+	grid-column:1 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+.linedup{
+	grid-column:6 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+.piece{
+	grid-column:11 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+	margin-top:30px;
+}
+.peeeel{
+	grid-column:11 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+
+.one-video{
+	justify-self:center;
+	height:75vh;
+  background-color: #6B6B6B;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 6;
+}
+
+.bottleangle{
+	grid-column:11 / -1;
+	grid-row:12;
+}
+
+.lineup{
+	width:100%;
+	position:absolute;
+}
+.lineup1{
+	grid-column: 1 / span 5;
+	margin-left: -170px;
+	grid-row: 1;
+	margin-top: -20px;
+	position:relative;
+}
+.lineup2{
+	grid-column: 1 / span 5;
+	margin-left: -170px;
+	grid-row: 2;
+	margin-top: -20px;
+		position:relative;
+}
+.lineup3{
+	grid-column: 1 / span 5;
+	margin-left: -185px;
+	grid-row: 2;
+	margin-top: -20px;
+		position:relative;
+}
+.lineup4{
+	grid-column: 1 / span 5;
+	margin-left: -180px;
+	grid-row: 2;
+	margin-top: -20px;
+	position:relative;
+}
+
+.purple{
+	grid-row:20;
+}
+.yellow{
+grid-row:20;
+}
+.green{
+grid-row:20;
+}
+.red{
+grid-row:20;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  // padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top:-200px;
+  z-index:0 !important;
+}
+.grapehand{
+	grid-column:1;
+	grid-row:5;
+	z-index:2 !important;
+}
+.cherryhand{
+	grid-column:1;
+	grid-row:5;
+	z-index:2 !important;
+}
+.melonhand{
+	grid-column:1;
+	grid-row:5;
+	z-index: 2 !important;
+}
+.lemonhand{
+	grid-column:1;
+	grid-row:5;
+	z-index:2 !important;
+}
+
+.grapepara{
+	grid-column:20 / span 5;
+	grid-row:48 / span 5;
+	z-index:5 !important;
+}
+.cherrypara{
+	grid-column:20 / span 5;
+	grid-row:63 / span 5;
+	z-index:5 !important;
+}
+.watermelonpara{
+	grid-column:20 / span 5;
+	grid-row:75 / span 5;
+	z-index:5 !important;
+}
+.lemonpara{
+	grid-column:20 / span 5;
+	grid-row:105 / span 5;
+	z-index:5 !important;
+}
+
+.wave-container {
+  background: #EEE;
+  position:relative;
+}
+.wave-container > svg {
+  display: block;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.peell {
+ margin-left: -310px;
+}
+.linedup {
+ margin-left: -310px;
+}
+.piece {
+ margin-left: -310px;
+}
+.peeeel {
+ margin-left: -310px;
+}
+.grapehand {
+ grid-column: 2;
+ margin-left: 20px;
+}
+.cherryhand {
+ grid-column: 2;
+ margin-left: 20px;
+}
+.melonhand {
+ grid-column: 2;
+ margin-left: 20px;
+}
+.lemonhand {
+ grid-column: 2;
+ margin-left: 20px;
+}
+.medesc {
+ grid-row: 57 / span 4;
+}
+.nishiii {
+ grid-column: 4 / span 4;
+ grid-row: 18 / span 4;
+ opacity:0;
+}
+.nishidesc {
+ grid-column: 4 / span 7;
+ grid-row: 54 / span 4;
+ opacity:0;
+}
+.botfell {
+ z-index: 10 !important;
+}
+
+}
+
+@media screen and (max-width: 39.9375em){
+	.botfell{
+	grid-row:16 / span 10;
+	grid-column:1 / span 10;
+	margin-top:-450px;
+	margin-left:-100px;
+	z-index:10 !important;
+	position:relative;
+}
+
+.angledbottle{
+	grid-column:12;
+	grid-row:1;
+	z-index:2 !important;
+}
+.meee{
+	grid-column:1 / span 5;
+	grid-row:6 / span 4;
+	z-index:1;
+	margin-left:10px;
+}
+.medesc{
+	grid-column:2 / span 6;
+	grid-row:51 / span 4;
+	font-size:1.5rem;
+	margin-left:-40px;
+	text-align:center;
+	z-index:0;
+}
+.nishiii{
+	opacity:0;
+}
+.nishidesc{
+	opacity:0;
+}
+
+.tilt{
+opacity:0;
+}
+
+.tiltheader{
+	grid-column:1 / -1;
+	grid-row:1 / 5;
+	justify-self:center;
+	align-self:center;
+	z-index:4;
+	margin-top:20px;
+}
+.peell{
+	grid-column:1 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+.linedup{
+	grid-column:6 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+.piece{
+	grid-column:11 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+	margin-top:30px;
+}
+.peeeel{
+	grid-column:11 / span 2;
+	grid-row:8 / span 2;
+	z-index:10 !important;
+	margin-left:-200px;
+}
+.one-video{
+	justify-self:center;
+	height:75vh;
+  background-color: #6B6B6B;
+  grid-column: 1 / span 12;
+  grid-row: 1 / span 6;
+}
+
+.bottleangle{
+	grid-column:11 / -1;
+	grid-row:12;
+}
+
+.lineup{
+	width:100%;
+	position:absolute;
+}
+.lineup1{
+	grid-column: 1 / span 5;
+	margin-left: -170px;
+	grid-row: 1;
+	margin-top: -20px;
+	position:relative;
+}
+.lineup2{
+	grid-column: 1 / span 5;
+	margin-left: -170px;
+	grid-row: 2;
+	margin-top: -20px;
+		position:relative;
+}
+.lineup3{
+	grid-column: 1 / span 5;
+	margin-left: -185px;
+	grid-row: 2;
+	margin-top: -20px;
+		position:relative;
+}
+.lineup4{
+	grid-column: 1 / span 5;
+	margin-left: -180px;
+	grid-row: 2;
+	margin-top: -20px;
+	position:relative;
+}
+.purple{
+	grid-row:20;
+}
+.yellow{
+grid-row:20;
+}
+.green{
+grid-row:20;
+}
+.red{
+grid-row:20;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  // padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top:-200px;
+  z-index:0 !important;
+}
+.grapehand{
+	opacity:0;
+}
+.cherryhand{
+opacity:0;
+}
+.melonhand{
+	opacity:0;
+}
+.lemonhand{
+	opacity:0;
+}
+.grapepara{
+	opacity:0;
+}
+.cherrypara{
+	opacity:0;
+}
+.watermelonpara{
+	opacity:0;
+}
+.lemonpara{
+	opacity:0;
+}
+.wave-container {
+  background: #EEE;
+  position:relative;
+}
+.wave-container > svg {
+  display: block;
+}
+}
